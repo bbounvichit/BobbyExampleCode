@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/tempEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/padding_large"
+        android:hint="@string/tempNumber"
+        android:inputType="number"
+        android:background="@color/textbg"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/padding_medium"
+        android:onClick="textClick"
+    />
+    <RadioGroup 
+        android:id="@+id/radioGroup1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:text="@string/cels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textColor="@color/text_color"
+         	android:textSize="@dimen/padding_medium"
+            />
+        
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:text="@string/fahr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+        	android:textSize="@dimen/padding_medium"
+            />
+            
+    </RadioGroup>
+        
+    <Button
+        android:id="@+id/button1"
+        android:text="@string/calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickEvent"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/padding_medium"
+    />
+    
+    
+</LinearLayout>
