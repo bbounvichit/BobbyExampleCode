@@ -1,4 +1,4 @@
-Fraction Calculator App
+Fraction Calculator Application
 
 Author: Bobby Bounvichit
 
